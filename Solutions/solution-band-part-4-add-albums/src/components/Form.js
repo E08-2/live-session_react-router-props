@@ -15,6 +15,7 @@ const Form = props => {
         let newAlbum = {
             // Create an id for the new album based on the existing number of albums +1
             // This is not ideal, but as we cannot delete an album/change the list it will be ok for now!
+            // In the next module, we will talk more about how to create unique ids. :-)
             id: (props.allAlbums.length + 1).toString(),
             title: props.newTitle,
             year: props.newYear
